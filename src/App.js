@@ -6,7 +6,7 @@ const App = () => {
     <div>
       <Router>
         <NavBar />
-        <Routes> {/* Wrap Routes */}
+        <Routes> 
           <Route path='/'/>
           <Route path='/About'/>
           <Route path='/Donations'/>
