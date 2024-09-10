@@ -1,4 +1,10 @@
 import React from 'react';
+import Home from './component/Home';
+import About from './component/About';
+import Donations from './component/Donations';
+import Volunteer from './component/Volunteer';
+import News from './component/News';
+import Contact from './component/Contact';
 import NavBar from './component/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes
 const App = () => {
@@ -7,12 +13,12 @@ const App = () => {
       <Router>
         <NavBar />
         <Routes> 
-          <Route path='/'/>
-          <Route path='/About'/>
-          <Route path='/Donations'/>
-          <Route path='/Volunteer'/>
-          <Route path='/News'/>
-          <Route path='/Contact'/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Donations'element={<Donations/>} />
+          <Route path='/Volunteer' element={<Volunteer/>}/>
+          <Route path='/News' element={<News/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
         </Routes>
       </Router>
     </div>
