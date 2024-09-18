@@ -1,5 +1,4 @@
 import React from 'react'
-import './home_comp/nav.css';
 export default function Hnav() {
   return( 
   <div className="page-wrapper">
