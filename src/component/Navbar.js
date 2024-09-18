@@ -1,36 +1,48 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './home_comp/nav.css';
 
 const NavBar = () => {
-
+    function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+    };
+    function hideSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+    };
     return (
-        <div>
-            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/"><img src="logo_avabodh.png" alt="Err" style={{
-                        width: '50px',
-                        height: '50px',
-                        borderRadius: '50%',
-                        marginRight: '10px'
-                    }}/>avabodh</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item"><Link className="nav-link" aria-current="page" to="/">Home</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/About">About</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/Donations">Donations</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/Volunteer">Volunteer</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/News">News</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to="/Contact">Contact</Link></li>
-                        </ul>
-                    </div>
-                </div>
+        <>
+            <nav>
+                <ul className="sidebar">
+                    <li onClick={hideSidebar}><Link to="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></Link></li>
+                    <li><Link to="#">Home</Link></li>
+                    <li><Link to="#">About</Link></li>
+                    <li><Link to="#">Volunteer</Link></li>
+                    <li><Link to="#">Contact</Link></li>
+                    <li><Link to="#">Donation</Link></li>
+                </ul>
+                <ul>
+                    <li className="logo">
+                        <Link to="/">
+                            <img src="logo_avabodh.png" alt="Logo" style={{
+                                width: '50px',
+                                height: '50px',
+                                borderRadius: '50%',
+                                marginRight: '10px'
+                            }}/>
+                        </Link>
+                    </li>
+                    <li className="hideOnMobile"><Link to="#">Home</Link></li>
+                    <li className="hideOnMobile"><Link to="#">About</Link></li>
+                    <li className="hideOnMobile"><Link to="#">Volunteer</Link></li>
+                    <li className="hideOnMobile"><Link to="#">Contact</Link></li>
+                    <li className="hideOnMobile"><Link to="#">Donation</Link></li>
+                    <li className="menu-btn" onClick={showSidebar}><Link to="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></Link></li>
+                </ul>
             </nav>
-        </div>
-    )
+        </>
+    );
+};
 
-}
-
-export default NavBar
+export default NavBar;

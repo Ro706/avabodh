@@ -31,7 +31,7 @@
   --careox-gray-rgb: 241, 246, 247;
   --careox-white: #fff;
   --careox-white-rgb: 255, 255, 255;
-  --careox-black: #122f2a;
+  --careox-black: #122d2f;/* background_nav */
   --careox-black-rgb: 18, 47, 42;
   --careox-black2: #121212;
   --careox-black2-rgb: 18, 18, 18;
@@ -17567,6 +17567,42 @@ body.boxed-wrapper .page-wrapper {
   margin-right: auto;
   background-color: var(--careox-white, #fff);
   box-shadow: 0px 0px 100px 0px rgba(var(--careox-black3-rgb, 0, 0, 0), 0.08);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  body.boxed-wrapper .page-wrapper {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  body.boxed-wrapper .page-wrapper {
+    max-width: 960px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body.boxed-wrapper .page-wrapper {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  body.boxed-wrapper .page-wrapper {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  body.boxed-wrapper .page-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
 body.boxed-wrapper .about-one__shape,
 body.boxed-wrapper .topbar-one__bottom__button img,
