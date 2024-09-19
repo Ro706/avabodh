@@ -26,7 +26,7 @@ export default function Donation_three() {
             "loop": false,
             "smartSpeed": 700,
             "nav": false,
-            "navText": ["<span class=\"icon-up-arrow-two\"></span>","<span class=\"icon-down-arrow-two\"></span>"],
+            "navText": ["<span className=\"icon-up-arrow-two\"></span>","<span className=\"icon-down-arrow-two\"></span>"],
             "dots": false,
             "autoplay": true,
             "responsive": {
@@ -207,7 +207,7 @@ export default function Donation_three() {
             "loop": false,
             "smartSpeed": 700,
             "nav": false,
-            "navText": ["<span class=\"icon-up-arrow-two\"></span>","<span class=\"icon-down-arrow-two\"></span>"],
+            "navText": ["<span className=\"icon-up-arrow-two\"></span>","<span className=\"icon-down-arrow-two\"></span>"],
             "dots": false,
             "autoplay": true,
             "responsive": {
@@ -275,45 +275,29 @@ export default function Donation_three() {
             </h6>
             <h3 className="sec-title__title bw-split-in-left">Become a Donate Now</h3>
           </div>
-          <form action="#" className="donate-three__form">
+
+          <form action='#' className="donate-three__form">
             <div className="donate-three__form__amount">
               <span className="donate-three__form__amount__sign">$</span>
-              <input
-                type="text"
-                value="200"
-                name="donate_amount"
-                id="donate_amount"
-                placeholder="Amount"
-                className="donate-three__form__amount__input"
-              />
+              <input type="text" value="200" name="donate_amount" id="donate_amount" placeholder="Amount" className="donate-three__form__amount__input"/>
             </div>
             <div className="donate-three__form__buttons">
-              <button type="button" className="donate-three__form__buttons__item">
-                $<span className="donate-three__form__buttons__amount">100</span>
-              </button>
-              <button type="button" className="donate-three__form__buttons__item active">
-                $<span className="donate-three__form__buttons__amount">200</span>
-              </button>
-              <button type="button" className="donate-three__form__buttons__item">
-                $<span className="donate-three__form__buttons__amount">500</span>
-              </button>
-              <button type="button" className="donate-three__form__buttons__item">
-                $<span className="donate-three__form__buttons__amount">300</span>
-              </button>
-              <button type="button" className="donate-three__form__buttons__item">Custom</button>
+                  <button type="button" className="donate-three__form__buttons__item">$<span className="donate-three__form__buttons__amount">100</span></button>
+                  <button type="button" className="donate-three__form__buttons__item active">$<span className="donate-three__form__buttons__amount">200</span></button>
+                  <button type="button" className="donate-three__form__buttons__item">$<span className="donate-three__form__buttons__amount">500</span></button>
+                  <button type="button" className="donate-three__form__buttons__item">$<span className="donate-three__form__buttons__amount">300</span></button>
+                  <button type="button" className="donate-three__form__buttons__item">Custom</button>
             </div>
             <div className="donate-three__form__submit">
-              <button type="submit" className="careox-btn">
-                <span>Donate Now</span>
-              </button>
-              <div className="donate-three__form__volunter">
-                <img src="assets/images/resources/volunteer-image-1.png" alt="careox" />
-                <img src="assets/images/resources/volunteer-image-2.png" alt="careox" />
-                <img src="assets/images/resources/volunteer-image-3.png" alt="careox" />
-                <div className="donate-three__form__volunter__total">+1K</div>
-                <h5 className="donate-three__form__volunter__active">Active Donor’s</h5>
-              </div>
-            </div>
+                  <button type="submit" className="careox-btn"><span>Donate Now</span></button>
+                  <div className="donate-three__form__volunter">
+                    <img src="assets/images/resources/volunteer-image-1.png" alt="careox"/>
+                    <img src="assets/images/resources/volunteer-image-2.png" alt="careox"/>
+                    <img src="assets/images/resources/volunteer-image-3.png" alt="careox"/>
+                    <div className="donate-three__form__volunter__total">+1K</div>
+                    <h5 className="donate-three__form__volunter__active">Active Donor’s</h5>
+                  </div>
+            </div>                    
           </form>
         </div>
       </div>
