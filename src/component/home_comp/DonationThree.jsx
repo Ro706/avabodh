@@ -275,11 +275,17 @@ export default function DonationThree() {
             </h6>
             <h3 className="sec-title__title bw-split-in-left">Become a Donate Now</h3>
           </div>
-
-          <form action='#' className="donate-three__form">
-            <div className="donate-three__form__amount">
-              <span className="donate-three__form__amount__sign">$</span>
-              <input type="text" value="200" name="donate_amount" id="donate_amount" placeholder="Amount" className="donate-three__form__amount__input"/>
+          <form action="#" className="donate-three__form">
+  <div className="donate-three__form__amount">
+    <span className="donate-three__form__amount__sign">$</span>
+    <input
+      type="text"
+      defaultValue="200" // Use defaultValue instead of value
+      name="donate_amount"
+      id="donate_amount"
+      placeholder="Amount"
+      className="donate-three__form__amount__input"
+    />
             </div>
             <div className="donate-three__form__buttons">
                   <button type="button" className="donate-three__form__buttons__item">$<span className="donate-three__form__buttons__amount">100</span></button>
