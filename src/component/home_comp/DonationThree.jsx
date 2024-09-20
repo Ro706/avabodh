@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-export default function Donation_three() {
+export default function DonationThree() {
   return (
     <>
     <section className="donations-three">

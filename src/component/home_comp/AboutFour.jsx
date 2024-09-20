@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-export default function About_four() {
+export default function AboutFour() {
   return (
     <>
       <section className="about-four">
