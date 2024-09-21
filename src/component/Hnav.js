@@ -10,13 +10,14 @@ export default function Hnav() {
             <span className="topbar-two__info__icon">
               <i className="icofont-envelope"></i>
             </span>
-            <a href="mailto:demo@example.com">demo@example.com</a>
+            <a href="mailto:Foundationavabodh@gmail.com">Foundationavabodh@gmail.com</a>
           </li>
           <li>
             <span className="topbar-two__info__icon">
               <i className="icofont-location-pin"></i>
             </span>
-            <a href="https://www.google.com/maps">27, Dhaka London City, LOT</a>
+            <a href="https://www.google.com/maps">Flat no. 411, B2 , honey Archana complex, oppo. Niramay Hospital, untkhana road, medical squre, nagpur 
+            </a>
           </li>
         </ul>
         <ul className="list-unstyled topbar-two__nav">
