@@ -6,6 +6,7 @@ import DonationThree from './home_comp/DonationThree';
 import TestiMonialsThree from './home_comp/TestiMonialsThree';
 import BenefitOne from './home_comp/BenefitOne';
 import Feature2 from './home_comp/Feature2';
+import Blog from './home_comp/Blog';
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
       <TestiMonialsThree/>
       <BenefitOne/>
       <Feature2/>
+      <Blog/>
       <div align="center">
       This is a home page
       </div>
