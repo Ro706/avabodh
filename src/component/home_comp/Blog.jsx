@@ -202,7 +202,7 @@ export default function Blog() {
               <span className="sec-title__tagline__border"></span>HELP THE PEOPLE
             </h6>
             <h3 className="sec-title__title bw-split-in-left">
-              Volunteers Around <br /> India.
+              Volunteers Around <br /> India
             </h3>
           </div>
           <p className="volunteer__content__text">
