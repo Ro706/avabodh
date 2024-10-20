@@ -6,13 +6,11 @@ import Volunteer from './component/Volunteer';
 import News from './component/News';
 import Contact from './component/Contact';
 import NavBar from './component/Navbar';
-import Hnav from './component/Hnav';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes
 const App = () => {
   return (
     <div>
       <Router>
-        <Hnav/>
         <NavBar />
         <Routes> 
           <Route path='/' element={<Home/>}/>
